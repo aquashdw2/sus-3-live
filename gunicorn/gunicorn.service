@@ -11,7 +11,7 @@ ExecStart=/home/ubuntu/sus-3-live/venv_django/bin/gunicorn \
     --error-logfile gunicorn/gunicorn-error.log \
     --workers 3 \
     --bind unix:/home/ubuntu/sus-3-live/gunicorn/django.sock \
-    sus_3_live.sus_3_live.wsgi:application
+    sus_3_live.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
